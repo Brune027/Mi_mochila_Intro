@@ -1,0 +1,25 @@
+Clase 5
+Estructura y tecnología de computadoras
+Qué es una computadora?
+Es una maquina que recibe datos, los procesa y muestra los resultados, los cuales pueden ser almacenados, transmitidos o impresos
+La información viaja a través de impulsos eléctricos los cuales van a la computadora a través de medios llamados “buses de datos” los cuales son interpretados por ceros y unos llamados bits.
+El CPU, conocido como unidad central de proceso, la CPU realiza miles de millones de operaciones por segundo, pero para ello necesita instrucciones.
+¿Cuales son los componentes de una computadora?
+Los componentes internos de una computadora son todos los elementos físicos inseparables de la misma, sin alguno de ellos no podría funcionar de manera correcta.
+Los componentes externos son todos aquellos dispositivos que utiliza la computadora pero que no son imprescindibles para su funcionamiento.
+Los componentes externos o periféricos pueden ser clasificados como:
+-de entrada: introducen datos a la computadora.
+-de salida: extraen datos de la computadora.
+-mixtos: cumplen ambas funciones.
+-de almacenamiento: permiten almacenamiento permanente y se conectan de manera externa.
+-de comunicación: permiten la conexión entre computadoras.
+La CPU también conocida como Unidad Central de Procesamiento, Microprocesador o Procesador, su función principal es procesar todas las tareas de la PC a través de la resolución de instrucciones lógicas y matemáticas que se almacenan en la memoria RAM .
+La frecuencia, núcleos, subprocesos o hilos y la memoria caché son las características de la CPU que determinan la velocidad en la que trabaja la misma.
+Las PC se diseñan según la arquitectura de Von Neumann.
+Los núcleos son como un subprocesador en si mismos dependiendo la cantidad de núcleos que posea la CPU se definirá la cantidad de tareas simultaneas que puede realizar (single core: una sola, dual core:dos, etc.)
+Los hilos son el flujo de control de programa, su función es administrar mejor los tiempos de espera entre procesos.
+La memoria caché es la memoria más rápida del sistema y se utiliza para acelerar el acceso a la memoria de nuestro procesador almacenando los datos e instrucciones mas utilizados por el sistema para hacer más eficiente el acceso a los datos
+GPU
+Una unidad de procesamiento gráfico es un coprocesador dedicado al procesamiento de gráficos para aligerar la carga de trabajo del procesador central en aplicaciones, como los videojuegos o aplicaciones 3D interactivas.
+Memoria Secundaria
+Es un tipo de almacenamiento masivo y permanente con mayor capacidad para almacenar datos e información que la memoria primaria (RAM) que es volátil, aunque la memoria secundaria es de menor velocidad.

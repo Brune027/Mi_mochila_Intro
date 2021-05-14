@@ -1,0 +1,85 @@
+Clase 6
+Memorias
+La memoria de la computadora se divide en dos partes: Memoria Principal (donde se prioriza la velocidad sobre el almacenamiento) y la Memoria Secundaria (donde lo importante es la capacidad de almacenamiento).
+Cuando el procesador debe ejecutar una operación debe cargarla primero en la memoria principal, más específicamente en la RAM. Todo lo que se almacena en la RAM (como instrucciones y datos) es alojado de manera temporal hasta que es ejecutado por el microprocesador. Algunas de sus características son:
+1- Velocidad
+2- Capacidad (cantidad de datos que se pueden almacenar, usualmente en GB)
+3- Latencia (es la cantidad de ciclos de reloj que transcurren entre una petición y su respuesta)
+4- Voltaje (hace referencia a la cantidad de energía consumida)
+La RAM no es la única memoria dentro de la Memoria Principal, sino que también se encuentra la Caché, que tiene la ventaja de ser la más veloz pero con muy poca capacidad de almacenamiento.
+La memoria principal es una memoria volátil por lo que si pierde energía, todo lo que no se haya guardado en la memoria secundaria se pierde. Una excepción es la ROM (Read Only Memory) que es de sólo lectura y no es volátil, su función es guardar las instrucciones necesarias para iniciar la PC)
+La Memoria Secundaria tiene como principal función almacenar información de forma no volátil, y está compuesta por todos los dispositivos que complementan el sistema de memoria. Usan diferentes tecnologías:
+1- Magnética (disco duro o HDD, etc)
+2- Óptica (DVD, CD, BlueRay, etc)
+3- De estado sólido (SDD, pendrive, etc.)
+Unidades de medida
+Bit: Es la unidad mínima de información empleada en informática. Puede ser 0 o 1.
+Byte (B): Equivale a 8 bits. Con uno o dos bytes guardas o procesas una letra.
+Kilobyte (kB): 1024 bytes forman un Kilobyte.
+Megabyte (MB): Equivale a 1024 Kilobytes.
+Gigabyte (GB): Es igual a 1024 Megabytes. Es la unidad de medida que se suele usar para determinar la capacidad de almacenamiento de las USB.
+Terabyte (TB): Lo componen 1024 Gigabytes. Muchas veces esta medida determina la capacidad de almacenamiento de los discos duros.
+Petabyte (PB): Es igual a 1024 Megabytes.
+Exabyte (PB): Es igual a 1024 Petabytes.
+Zetabyte (PB): Es igual a 1024 Exabytes.
+Yottabyte (PB): Es igual a 1024 Zetabytes.
+Memoria Principal
+Las instrucciones y los datos para ser procesados por el CPU deben ser cargados en la RAM con la cual se comunica a través del Bus de datos, y con un ritmo determinado por un componente llamado Reloj.
+La comunicación entre las memorias y los demás componentes de la computadora es lo que condiciona el rendimiento.
+Registros
+Son memorias de muy alta velocidad usadas en los procesadores. La CPU posee 5 registros internos:
+1- PC: Program Counter
+2- IR: Intruction Register
+3- MAR: Memory Address Register
+4- MDR: Memory Data Register
+5- Accumulator
+Caché
+Es una memoria de alta velocidad que se encuentra entre el CPU y la RAM y que almacena la información que se utiliza más frecuentemente. Tiene diferentes niveles de jerarquía (L1, L2, L3, y a veces L4) que se diferencian por su cercanía al procesador, su velocidad y la capacidad.
+Tipos de RAM
+FPM (Fast Page Mode) RAM
+Es un tipo de RAM que espera durante todo el proceso de localización de un bit de datos por columna y fila, y luego lee el bit antes de comenzar con el siguiente. Máx. velocidad de transferencia de 176 Mbps.
+SDR (Single Data Rate) RAM
+Memoria de acceso dinámico síncrono. Tiene tiempo de acceso de entre 25 y 10ns (nanosegundos) y están en módulos DIM (módulo de memoria dual en línea).
+R (Rambus) DRAM
+Este tipo de chips de RAM funciona en paralelo, lo que le permite alcanzar una velocidad de datos de 800 MHz o 1600 Mbps. Genera mucho calor al funcionar a tan altas velocidades.
+V (Video) RAM
+RAM optimizada para adaptadores de video. Tienen dos puertos para que los datos de video puedan escribirse al mismo tiempo que el adaptador de video lee regularmente la memoria para refrescar la pantalla.
+EDO (Extended Data Output) RAM
+No espera a que finalice el procesamiento del primer bit para continuar con el siguiente. Una vez se localiza la dirección del primer bit, comienza a buscar el siguiente.
+DDR RAM
+Se lanzó en el 2000, y su densidad máxima era de 128 MB, por lo que no había módulos de más de 1GB.
+DDR2 RAM
+Lanzada hacia 2004 funcionaba a 1.8 V, un 28% menos que la DDR. Su densidad máxima era el doble (256 MB), por lo que su velocidad máxima también se multiplicó, llegando a 533 MHz.
+DDR3 RAM
+Se lanzó en el 2007 y fue donde se implementaron los perfiles XMP. Los módulos operaban a 1.5V y 1.65V con velocidades base de 1066 MHz, y su densidad llegó hasta los 8GB por módulo.
+DDR4 RAM
+Lanzada en 2014, trabaja a 1.05V y 1.2V, aunque muchos módulos lo hacen a 1.35V. Su velocidad base comenzó en los 2133 MHz. Ya se pueden conseguir módulos de 32GB.
+DDR5 RAM
+Se lanzó en 2020 y llega a anchos de banda de 6.4 Gbps siendo la primera memoria DDR de doble canal en un solo chip. La frecuencia base es de 4800 MHz y su voltaje baja a 1.1V. La capacidad de almacenamiento máxima de un módulo es de 128 GB.
+Memoria Secundaria
+Su función es almacenar información de manera no volátil, aunque es más lenta tanto para escribir o leer los datos en comparación con la memoria principal.
+Los tres tipos de tecnología que se utilizan para guardar la información en la memoria secundaria son:
+Magnética: se basa en guardar un patrón magnético en (generalmente) un disco giratorio cubierto por una membrana magnética. Son las más lentas pero más baratas de construir.
+Óptica: los bits se codifican como puntos de luz y puntos sin luz, lo que aumenta su velocidad de lectura aunque disminuye su capacidad de almacenamiento.
+Sólida: poseen transistores que atrapan o eliminan cargas eléctricas. Son las más veloces pero más costosas de fabricar.
+Como todos los dispositivos físicos tienden a desgastarse y por lo tanto siempre se debe intentar mantener la información respaldada y segura.
+Formas de almacenamiento de datos
+¿Qué es el sistema numérico?
+El sistema de numeración es un conjunto de símbolos y reglas de generación que permiten construir todos los números validos del sistema.
+Dentro de los sistemas numéricos se pueden hacer dos grandes divisiones: sistemas numéricos no posicionales y sistemas numéricos posicionales. Sistema numérico no posicional es aquel en el cual el valor de los símbolos que componen el sistema es fijo, no depende de la posición. En cambio, el sistema numérico posicional es aquel en el cual el valor del símbolo depende del valor que les ha asignado y de la posición que ocupa.
+¿Qué es un dígito?
+Dígito es cada uno de los símbolos diferentes que constituyen el sistema de numeración. La base del sistema de numeración a la cantidad de dígitos que lo conforman. Una vez agotada la cantidad de dígitos que forman el sistema de numeración, las cantidades mayores a la base se obtienen combinando en forma adecuada los diferentes dígitos del sistema. Esto hace que cada uno de los dígitos adopte distintos valores según la posición que ocupe.
+¿Qué es un sistema binario?
+Es un sistema de numeración que está formado por dos símbolos, los dígitos son representados utilizando dos cifras: 0 y 1.
+Fragmentación, segmentación y paginación
+Llamamos fragmentación al espacio que queda desperdiciado al momento de usar los métodos de partición de memoria. Ésta se genera cuando, durante el reemplazo de procesos, quedan huecos entre dos o más procesos de manera no contiguos y cada hueco no se puede ocupar con algún proceso de la lista de espera. Esta fragmentación se denomina fragmentación externa.
+La fragmentación interna es generada cuando se reserva más memoria de la que el proceso va realmente a usar. Se debe de esperar a la finalización del proceso para que se libere el bloque completo de la memoria.
+¿Qué es la segmentación?
+Es otra técnica de gestión de memoria que pretende acercarse más al punto de vista del usuario.
+Los programas se desarrollan en torno a un núcleo central desde el que se bifurca a otras partes o se accede a zonas de datos. Desde este punto de vista, un programa es un conjunto
+de componentes lógicos de tamaño variable o un conjunto de segmentos, es decir, el espacio lógico de direcciones se considera como un conjunto de segmentos, cada uno definido por su tamaño y un número.
+La segmentación de un programa la realiza un compilador y en ella cada dirección lógica se expresará mediante dos valores: número de segmento (s) y desplazamiento dentro del segmento (d).
+¿Qué es la paginación?
+La paginación es una técnica de gestión que permite asignar la memoria de forma discontinua. Con este fin, se divide la memoria en trozos de tamaño fijo llamados armazones o frames y la lógica en bloques de igual tamaño denominados páginas. El sistema operativo mantiene internamente una tabla de páginas donde se relaciona cada página cargada en memoria con el frame que la contenga, es decir, su dirección inicial en memoria real.
+El sistema operativo analizará cada nuevo trabajo que se disponga a entrar para conocer el número de páginas que ocupa y buscará en su lista de frames libre un número igual de ellos.
+De esta manera, se logra evitar la fragmentación externa ya que cualquier frame libre es asignable a un trabajo que lo necesite. Por otro lado, seguirá existiendo fragmentación interna puesto que, los trabajos no ocuparán un tamaño múltiplo del tamaño de la página.

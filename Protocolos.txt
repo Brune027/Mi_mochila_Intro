@@ -1,0 +1,61 @@
+¿Qué es un protocolo?
+Un protocolo es el conjunto de reglas que se establecen en proceso de comunicación entre dos o más entes.  
+Cómo sería un protocolo de comunicación en un aula de clase para que un estudiante participe en el tablero?
+Primero el profesor debe solicitar que un estudiante resuelva un ejercicio en el tablero.
+Luego un estudiante debe solicitar la palabra para poder ir al tablero.
+El profesor va a seleccionar a un estudiante entre aquellos que levantaron la mano para poder participar.
+Esta serie de pasos configuraría un protocolo para participar en clase
+Ahora bien, vámonos a la informática y definamos que sería un protocolo de internet, estos son aquellos que definen un formato y un conjunto de reglas comunes para intercambiar mensajes entre dispositivos dentro de una red llamada internet. Los protocolos más importantes de red están el IP (Protocol Internet) y el TCP (Transmission Control Protocol) estos configuran las bases de internet
+IP
+El protocolo IP es el encargado de conseguir que los datos lleguen desde su origen al destino, aunque no exista una conexión directa.
+Los datos en el protocolo IP están organizados en mensajes. Estos mensajes se denominan muchas veces paquetes y algunas veces datagramas. Cada datagrama IP incluye tanto una cabecera que especifica origen, destino, y otra información acerca de los datos como los propios datos del mensaje.
+
+Además este protocolo se encargará de buscar el mejor método de enrutamiento, sin garantías de alcanzar el destino final, pero aun así intenta buscar la mejor ruta entre las conocidas por la máquina.  
+
+TCP 
+El protocolo TCP es el encargado de garantizar que los datos se transmiten de manera adecuada a través de Internet. Este protocolo se encuentra en una capa intermedia entre el protocolo IP y la aplicación ya que necesita que la comunicación de red sea confiable, su función principal es asegurar que el tráfico llegue a destino de una manera confiable. 
+Dentro de las funciones del protocolo TCP están:
+Asegurar que no se pierdan los datos
+Controlar el orden de los paquetes de datos
+Prevenir la duplicación de paquetes 
+Controlar una posible saturación que se llegue a presentar
+Estos dos protocolos trabajan de manera conjunta para que un remitente pueda enviar un paquete de datos al destinatario en lo que se denomina modelo TCP/IP.
+El modelo TCP/IP permite un intercambio de datos fiable dentro de una red, definiendo los pasos a seguir desde que se envían los datos (en paquetes) hasta que son recibidos.
+
+El protocolo DNS que en sus siglas significa Domain Name System es un sistema que se encarga de asignarle nombre a los dispositivos/redes privadas que vienen como direcciones IP asociadas a un dominio para la visualización del usuario.
+También tenemos HTPP o Hypertext Transfer Protocol es un protocolo que se basa en el esquema de petición-respuesta entre un Cliente que usualmente es el Navegador Web y el Servidor o Servidor Web al que se conecte.
+ 
+HTTPS (Hypertext Transfer Protocol Secure) es una “evolución” del HTTP convencional, presenta como característica presenta la encriptación de datos que son enviados entre Cliente y Servidor con el fin de proteger información sensible...
+
+Luego está el UDP (User Datagram Protocol) es un protocolo de transporte sin conexión de alta velocidad, este a diferencia del protocolo TCP destaca por integrar información de direccionamiento suficiente en sus datagramas por lo que no es necesario una conexión directa para que viaje por la red, pero a diferencia del TCP, no le importa el orden en que se transmiten ni la integridad de los datagramas.
+Continuando tenemos la...
+Dirección IP
+Como lo comentamos antes dentro del conjunto de protocolos que hacen posible la comunicación en Internet esta el Protocolo de Internet o IP. Recordemos que para su funcionamiento, es necesario poder identificar a cada dispositivo que se encuentra en la red, y para ello utilizamos lo que se denomina Dirección IP.
+Una dirección IP es una cadena de números separados por puntos. La versión más conocida y utilizada actualmente es la IPv4, que nos muestra 4 octetos (o bytes) separados por puntos. Ya que cada uno de estos octetos posee 8 bits, sólo se pueden utilizar valores desde el 0 al 255.
+Clases de Direcciones IP
+Estos octetos son utilizados a su vez para identificar por un lado la red, y por otro el host o dispositivo que abarcaran mas o menos octetos cada  ID según su clase. La cantidad de bits destinados a cada uno determina las clases que se muestran a continuación.
+
+Como vemos, esto permite definir unas pocas redes grandes (de millones de hosts) que corresponden a la clase A, o millones de redes pequeñas de pocos hosts, tal como la clase C.
+Direcciones Públicas y Privadas
+Las direcciones IP a su vez se pueden dividir en dos tipos: públicas y privadas. Esencialmente, las direcciones públicas sirven para identificar los dispositivos en Internet y las privadas para identificar los hosts (ya sea routers, notebooks, consolas, smartphones, etc.) en las redes internas de una casa o compañía. En relación con las clases antes vistas, se ha reservado un rango especial de cada una de ellas para destinarlos a direcciones privadas.
+
+Es frecuente ver direcciones privadas de clase C en las casas (192.168.0.0 o 192.168.1.0) y direcciones clase A en VPN de empresas (10.10.18.0 por ej.).
+
+Direcciones dinámicas y estáticas 
+Dependiendo de si la dirección IP de un dispositivo cambia o no, se dice que es dinámica o estática, respectivamente. En el caso de las primeras suelen ser asignadas por el proveedor de Internet o el router mediante DHCP (Protocolo de configuración dinámica de host). Éstas sólo se asignan cuando el host está funcionando y dependiendo de las IP’s libres. En el caso de las estáticas suelen ser asignadas por el administrador de red, y no cambian aunque el dispositivo se apague.
+Máscara de Subred
+Internamente las redes se pueden dividir en redes más pequeñas denominadas subredes. Esto aporta una flexibilidad adicional al administrador de red, haciéndola más manejable.
+Para este fin, se “toman prestados” uno o más bits del inicio del identificador del host para identificar la subred. Para determinar entonces cuál es la subred y cuál es el host (como también poder decir si un host se encuentra dentro o no de la subred) se utiliza la llamada Máscara de subred.
+
+Como puede verse, la máscara indica con 1’s cuáles son los bits que corresponden a la red y subred, y con 0’s lo que corresponde al host.
+Direcciones IP importantes
+Dentro de las redes existen en particular dos direcciones que poseen una finalidad especial y que no deberían ser utilizadas por los dispositivos.
+Router: Usualmente se utiliza la primera dirección disponible para el router, que es quien sirve de enlace con otras redes (incluyendo Internet). Es éste quien al recibir una petición con un destino fuera de la red local, se encarga de redirigirla hacia donde corresponda basándose en su tabla de enrutamiento. Se suele emplear la primera dirección por convención, pero no hay una limitación técnica para ello.
+Broadcast: Es la dirección más alta de la red y se utiliza para enviar un mensaje de difusión a todos los dispositivos que se encuentran en dicha red.
+IPv6
+Es la versión destinada a sustituir la versión 4 del protocolo, que posee un límite de direcciones de red muy bajo, lo cual impide el crecimiento de la misma.
+Entre sus ventajas encontramos:
+·     Numero casi ilimitado de direcciones únicas: Permite que cada dispositivo conectado tenga su IP propia.
+·     Autoconfiguración: posee mejores métodos que el DHCP de IPv4 para configurar automáticamente las direcciones.
+·     Más seguro: Puede ser mejorado con IPSec (IP Security), para gestionar la encriptación y autenticación entre hosts. Proporciona entonces seguridad de punto a punto en la transferencia de datos.
+·     Más eficiente: En cuanto a la gestión de paquetes.

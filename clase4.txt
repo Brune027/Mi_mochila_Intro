@@ -1,0 +1,24 @@
+Clase4
+GitHub
+Es una plataforma colaborativa que nos va a permitir llevar un control de versión sobre nuestro código.
+Es un lugar en la nube donde se puede almacenar los archivos de programación de forma gratuita a través de un repositorio, a cada proyecto le corresponde un repositorio nuevo.
+En la nube se guardan repositorios remotos, y en la computadora tendremos copias, llamadas repositorios locales, los cuales mantienen un vínculo.
+Cada persona de nuestro equipo a través de los comandos de Git se descargará los cambios y subirá las actualizaciones.
+Los repositorios pueden ser públicos o privados. 
+¿Cómo conectar el repositorio local con el repositorio remoto?
+Una vez creada la cuenta de GitHub y habiendo configurado el repositorio local con el nombre de usuario y el mail que se utilizó para crear dicha cuenta, se indica a que repositorio remoto se quiere enviar la información y así dejarlos vinculados.
+¿Como subir los archivos al repositorio remoto?
+Se puede subir un archivo siguiendo los siguientes comandos:
+git add . // agrega los archivos
+git commit -m "mensaje" // comitea los cambios hechos
+git push origin master // envia los cambios al repositorio remoto
+git status // seguimiento del estado de los archivos
+¿Qué es una rama dentro de un repositorio?
+Una rama es una copia alternativa del mismo, una línea paralela en la que se puede trabajar sin afectar el código original. 
+Para Git, el repositorio remoto se llama “remote”.
+¿Como bajar los proyectos de GitHub?
+El comando $ git clone permite crear en la computadora una copia exacta de todos los archivos existentes en un repositorio remoto agregando la url exacta donde se encuentran guardados los archivos en la nube.
+Este comando se utiliza por única vez, si se quieren bajar las modificaciones de un archivo ya bajado el comando es $ git pull origin master, que es el comando que se utiliza para actualizar las modificaciones.
+¿Como resolver conflictos de versiones?
+Cuando GitHub no pudo resolver automáticamente el “merge” de versiones, se deberá resolver manualmente decidiendo que versión es la mas adecuada, eliminando la otra y las líneas que devuelve Git del problema.
+Una manera de evitar los conflictos es subir los commits lo mas acotadamente posible y subir los cambios de manera constante o directamente trabajar en otra rama.

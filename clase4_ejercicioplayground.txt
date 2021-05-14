@@ -1,0 +1,58 @@
+PS C:\Users\roque\OneDrive\Documents\Bru\Notas_Intro_Infor\Cursada> cd ..                                               PS C:\Users\roque\OneDrive\Documents\Bru\Notas_Intro_Infor> cd ..                                                       PS C:\Users\roque\OneDrive\Documents\Bru> cd repos                                                                      PS C:\Users\roque\OneDrive\Documents\Bru\repos> ls                                                                      
+
+    Directorio: C:\Users\roque\OneDrive\Documents\Bru\repos
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         5/4/2021     13:04                git_agregando_archivos
+d-----         5/4/2021     13:37                mercadoAbierto
+
+
+PS C:\Users\roque\OneDrive\Documents\Bru\repos> git clone https://github.com/Brune027/bajando_archivos.git              Cloning into 'bajando_archivos'...
+warning: You appear to have cloned an empty repository.
+PS C:\Users\roque\OneDrive\Documents\Bru\repos> ls                                                                      
+
+    Directorio: C:\Users\roque\OneDrive\Documents\Bru\repos
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         5/4/2021     16:18                bajando_archivos
+d-----         5/4/2021     13:04                git_agregando_archivos
+d-----         5/4/2021     13:37                mercadoAbierto
+
+
+PS C:\Users\roque\OneDrive\Documents\Bru\repos> cd .\bajando_archivos\                                                  PS C:\Users\roque\OneDrive\Documents\Bru\repos\bajando_archivos> ls                                                     PS C:\Users\roque\OneDrive\Documents\Bru\repos\bajando_archivos> echo $null > app.js                                    PS C:\Users\roque\OneDrive\Documents\Bru\repos\bajando_archivos> git status                                             On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\roque\OneDrive\Documents\Bru\repos\bajando_archivos> git add app.js                                         PS C:\Users\roque\OneDrive\Documents\Bru\repos\bajando_archivos> git status                                             On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+
+PS C:\Users\roque\OneDrive\Documents\Bru\repos\bajando_archivos> git commit -m "mi primer commit"                       [master (root-commit) 266b988] mi primer commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 app.js
+PS C:\Users\roque\OneDrive\Documents\Bru\repos\bajando_archivos> git status                                             On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+PS C:\Users\roque\OneDrive\Documents\Bru\repos\bajando_archivos> git push                                               Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 209 bytes | 209.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Brune027/bajando_archivos.git
+ * [new branch]      master -> master
+PS C:\Users\roque\OneDrive\Documents\Bru\repos\bajando_archivos> git status                                             On branch master
+Your branch is up to date with 'origin/master'.

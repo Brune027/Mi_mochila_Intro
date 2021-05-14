@@ -1,0 +1,11 @@
+Clase 1
+
+Bienvenida.
+
+Presentación de la materia y de los profesores.
+Pautas para el cursaado y aprobación de la materia.
+Breve repaso por el contenido que se verá en cada módulo.
+
+¿Qué es una computadora?
+Una computadora es un dispositivo electrónico capaz de recibir instrucciones y ejecutarlas. Las instrucciones las recibe a través de la interfaz que proporciona el sistema operativo, para facilitar la comunicación entre el usuario y la máquina.
+Breve resumen de la historia de la informática y reflexión sobre el futuro de la misma.

@@ -1,0 +1,56 @@
+Escritorios remotos
+Son programas que permiten acceder e interactuar con una computadora a distancia a través de internet. Sólo se necesita:
+1.	Tener acceso a internet
+2.	Ambas computadoras utilizando la misma aplicación de Escritorio Remoto
+3.	Que ambas computadoras estén encendidas simultáneamente
+La computadora a la que se accede se denomina Host, mientras que la computadora desde la que se accede físicamente se llama Cliente. Es posible que varios clientes se conecten al mismo host siempre y cuando éste tenga suficientes recursos.
+Una desventaja es que requiere suficientes funcionalidades de seguridad para no sufrir ciberataques, así como una buena conexión de Internet que además no sea comprometida.
+Máquinas Virtuales
+Una Máquina Virtual (VM) es un software capaz de contener un sistema operativo haciéndole creer que se trata de una computadora de verdad.
+VM de Sistemas
+Emula una computadora completa, y el lugar donde se crea la VM se llama Hipervisor. Éste se trata de una capa de software instalado sobre la capa de hardware cuya función es asignar los recursos físicos a la VM. 
+Existen dos tipos de Hipervisor:
+1.	Tipo 1: Más rápido y seguro. Corre directamente sobre la capa de hardware. 
+2.	Tipo 2: Corre sobre el Sistema Operativo, por lo que es más lento.
+VM de Procesos
+Sólo emula un proceso completo, por ejemplo una aplicación concreta.
+Las máquinas virtuales nos ayudan a probar otros sistemas operativos sin cambiar el hardware o el SO actual. Además, se puede ejecutar programas antiguos, o aplicaciones de otros sistemas operativos. También ofrecen un entorno de seguridad para analizar malware. Por último nos permite aprovechar mejor el hardware al utilizar mejor los recursos que podrían estar ociosos de otra manera.
+Estas ventajas permitieron llevar la virtualización a otras áreas, como almacenamiento y redes.
+Como desventajas podemos citar que son menos eficientes que una máquina real al poseer una capa adicional que en ciertas ocasiones necesita solicitar acceso al hardware real. Por otro lado, ejecutar simultáneamente varias VM’s puede afectar el rendimiento del equipo.
+Contenedores
+Un contenedor es un concepto de empaquetamiento de software que incluye la aplicación y todas sus dependencias de ejecución.
+Permiten configurar el sistema fácilmente y más rápido que un sistema normal. Es posible desplegar nuestro código en menos tiempo y esfuerzo con la ayuda de contenedores. Los requisitos de infraestructura ya no están vinculados al entorno de la aplicación.
+El contenedor a su vez tiene la capacidad de reducir el tamaño del desarrollo.
+Utilizar contenedores equivale a aumentar la productividad. Esto facilita la configuración técnica y el despliegue rápido de la aplicación. Además, la aplicación se ejecuta en un entorno aislado y reduce los recursos. Cada contenedor es independiente de los demás, lo que se conoce como isolación.
+Existen herramientas de programación y clustering para contenedores. Algunos exponen una web y otros ofrecen una API para controlarlos, lo que permite utilizar herramientas y controlar un clúster de hosts como si fueran un único host virtual.
+Cada tarea representa una instancia de un contenedor que debe estar en ejecución y que puede ser programada sobre los nodos (cada instancia que lo ejecuta).
+El uso de contenedores proporciona configuraciones que ofrecen una mayor protección para las aplicaciones que se ejecutan sobre ellos y a través de orquestadores.
+Orquestadores
+Son sistemas de automatización del despliegue, ajuste de escala y manejo de aplicaciones en contenedores.
+Se ocupan de cuestiones como:
+1.	Configuración automática.
+2.	Despliegue y "levantado" automático de servicios 
+3.	basados en contenedores.
+4.	Balanceado de carga.
+5.	Autoescalado y autoreinicio de contenedores.
+6.	Control de la "salud" de cada contenedor.
+7.	Intercambio de datos y networking.
+8.	Mantenimiento de parámetros "secretos" y configuraciones.
+Kubernetes
+Es el motor de orquestación de contenedores más popular que existe en el mercado. Funciona agrupando contenedores que componen una aplicación en unidades lógicas para una fácil gestión y descubrimiento.
+Docker Swarm
+Swarm es la solución que propone Docker ante los problemas de los desarrolladores a la hora de orquestar y planificar contenedores a través de muchos servidores. Viene incluido junto al motor de Docker y ofrece muchas funciones avanzadas integradas.
+Mesosphere DC/OS
+El sistema operativo Mesosphere Datacenter (DC/OS) es una plataforma de código abierto, integrada para datos y contenedores desarrollados sobre el kernel de sistema distribuido Apache Mesos. Se ha diseñado para gestionar múltiples máquinas dentro de un centro de datos con uno o más clústeres, ya sea en la nube o usando software en servidores en local. DC/OS puede desplegar contenedores y gestionar tanto aplicaciones sin estado como protocolos con estado en el mismo entorno. Es capaz de funcionar con Docker Swarm y Kubernetes.
+HashiCorp Nomad
+Es una herramienta binaria única capaz de planificar todas las aplicaciones virtualizadas en contenedores o independientes. Nomad ayuda a mejorar la densidad, a la vez que reduce costos, ya que es capaz de distribuir de manera eficiente más aplicaciones en menos servidores.
+Amazon ECS
+El servicio de AWS es un sistema de gestión muy escalable que permite a los desarrolladores ejecutar aplicaciones en contenedores. Está formado por muchos componentes integrados que permiten la fácil planificación y despliegue de clústeres, tareas y servicios del contenedor.
+Amazon Elastic Kubernetes Service
+Amazon EKS facilita la implementación, la administración y el escalado de aplicaciones en contenedores mediante Kubernetes en AWS. Ejecuta la infraestructura de administración de Kubernetes por el usuario en varias zonas de disponibilidad de AWS para disminuir errores.
+Azure Kubernetes Service
+El servicio de Azure es código abierto y está optimizado para su uso en las máquinas virtuales de Azure, denominadas Azure Virtual Machines. Proporciona las herramientas necesarias para crear, configurar y gestionar la infraestructura de contenedores Docker abiertos. AKS ofrece desarrollo simplificado de aplicaciones basadas en contenedores y despliegue con soporte para Kubernetes, Mesosphere DC/OS o Swarm para la orquestación.
+Google Kubernetes Engine
+Montado sobre Kubernetes, permite desplegar, gestionar y escalar aplicaciones de contenedores en la nube de Google. El objetivo de GKE es optimizar la productividad del departamento de desarrollo al mejorar la gestión de las cargas de trabajo basadas en contenedores. Oculta tanto las tareas de gestión simple como aquellas más complejas detrás de herramientas de líneas de comando, usando interfaces transparentes y fáciles de usar.
+Contenedores y Orquestadores
+Los softwares de orquestación de contenedores permiten a los desarrolladores utilizar múltiples contenedores para la implementación de sus aplicaciones. Estas herramientas ayudan a los administradores a automatizar el proceso de ejecución de instancias, provisión de hosts y vinculación de contenedores.

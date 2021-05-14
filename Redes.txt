@@ -1,0 +1,54 @@
+Redes
+Son un conjunto de dispositivos independientes capaces de comunicarse electrónicamente entre sí, compartir recursos e intercambiar información. 
+Se clasifican de múltiples formas:
+1.	Con relación a su extensión geográfica
+	a.	LAN: (Local Área Network o Red de Área Local). Red de dispositivos conectados con un alcance menor a los 5 km. Son redes pequeñas que abarcan una corta extensión geográfica, habituales en casas, oficinas y organizaciones pequeñas
+	b.	MAN: (Metropolitan Área Network o Red de Área Metropolitana). Posee un alcance de hasta 60 km porque consiste en la interconexión de varias redes LAN en una zona geográfica específica.
+	c.	WAN: (Wide Área Network o Red de Área Amplia). Se considera como redes de área amplia a todas aquellas que cubren una extensa área geográfica, requieren atravesar rutas de acceso público y utilizan, al menos parcialmente, circuitos proporcionados por una entidad proveedora de servicios de telecomunicación. El tamaño de esta red puede oscilar entre los 100 y los 1.000 km.
+2.	Por el método físico que emplea para su conexión
+	a.	Medios guiados: Enlazan los dispositivos mediante sistemas físicos de cable, tales como par trenzados, coaxiales o fibra óptica. La ventaja de esto es que pierden menos señal y existen menos ruidos, en cambio, la desventaja está dada por la incomodidad que resulta toda su instalación en cada área.
+	b.	Medios no guiados: Su conexión se establece mediante sistemas dispersos y de alcance de área, como ondas de radio, señal infrarroja o microondas —por ejemplo, los sistemas satelitales y el wifi—. Son un poco más lentas, pero mucho más cómodas y prácticas.
+3.	En relación a su grado de autenticación
+	a.	Red Privada: Solo puede ser usada por algunas personas que cuenten con la clave de acceso personal con la que esté configurada.
+	b.	Red Pública: Puede ser utilizada por cualquier persona ya que no requiere una clave para poder acceder a ella.
+4.	Por su grado de difusión
+	a.	Intranet: Red privada de ordenadores que utiliza tecnología de Internet para compartir dentro de una organización parte de sus sistemas de información y sistemas operacionales.
+	b.	Extranet: Red privada que se utiliza para compartir de forma segura parte de la información propia de una organización con proveedores, compradores, socios, clientes o cualquier otro negocio u organización.
+	c.	Internet: Es un conjunto descentralizado de redes de comunicación interconectadas que utilizan la familia de protocolos TCP/IP, garantizando que las redes físicas heterogéneas que la componen funcionen como una red lógica única, de alcance mundial.
+Medios de transmisión
+El medio de transmisión constituye el soporte físico a través del cual el emisor y receptor pueden comunicarse en un sistema de transmisión de datos.
+Medios guiados:
+Pares trenzados: Conjunto de pares de hilos de cobre conductores, cruzados entre sí. La forma trenzada del cable se utiliza para reducir la interferencia eléctrica con respecto a los pares cercanos que se encuentran a su alrededor. La velocidad máxima de transmisión es de 1 Gbps y la distancia entre repetidores es de 2 a 10 km.
+Cable coaxial: Tiene un alambre de cobre duro en su parte central. La velocidad máxima de transmisión es de 2 Gbps y la distancia entre repetidores es de 10 a 100 km.
+Fibra óptica: Es un enlace hecho con un hilo muy fino de material transparente y recubierto de un material opaco que evita que la luz se disipe. Por el núcleo, una hebra fina hecha de vidrio o plásticos, se envían pulsos de luz, no eléctricos. La velocidad máxima de transmisión es mayor a 10 Gbps y la distancia entre repetidores es mayor a 100 km.
+Medios no guiados:
+Señales de Bluetooth: Hacen posible la transmisión de los datos mediante un enlace por radiofrecuencia.
+Señales de Infrarrojo: Son ondas direccionales incapaces de atravesar objetos sólidos.
+Señales de WiFi: Permiten la interconexión inalámbrica de dispositivos electrónicos.
+Velocidades de Internet
+Características de una red de datos
+Velocidad: Es el tiempo en el que se transmiten los datos, la rapidez de subida y bajada depende del medio y estándares que utilicemos para comunicarnos, se mide generalmente en megabits por segundo. 
+Seguridad: Su objetivo está en evitar que intrusos accedan a la información transmitida.
+Confiabilidad: Mide la relación de fallos en la transmisión: menos fallos, más confiable. 
+Escalabilidad: Evita que el servicio no decaiga si el número de usuarios aumenta.
+Disponibilidad: Es la capacidad de la red para estar siempre funcionando.
+Bajada de Datos
+Es la capacidad que tiene Internet para navegar entre la red, es decir, la velocidad con la cual podemos descargar elementos.
+Subida de Datos
+Es la capacidad de cargar datos en la Web, por ejemplo, podríamos verlo en el tiempo que demora en subir un video a YouTube.
+Paquetes
+Son los bloques en lo que se divide la información al viajar por la red. El ping es el tiempo exacto que demora un paquete de datos en ser enviado de un dispositivo a otro, se mide en milisegundos.
+Test de velocidad
+n test de velocidad, o speedtest, es una herramienta utilizada para evaluar la perfomance de nuestra de red datos o de Internet. En ella podemos ver nuestra velocidad de subida, bajada y ping.
+¿Qué sucede cuando nos conectamos a una red?
+Ya sea por un medio guiado o inalámbrico, siempre que nos conectamos a una red, el router nos identifica para reconocernos y, cuando necesitamos, interactuar con los demás dispositivos conectados.
+Dirección IP
+La dirección IP o simplemente IP es un número único, el cual reconoce a cada dispositivo conectado en una red.
+Puerta de enlace
+De la misma forma que cada dispositivo conectado a la red posee una IP. El router, dispositivo que administra la red, también posee una conocida como puerta de enlace. La puerta de enlace es utilizada por los dispositivos de una red cuando se comunican con un dispositivo de una red diferente a la que se encuentran.
+IP dinámica o estática
+La asignación IP de nuestro dispositivo puede ser de dos maneras: dinámica, si permitimos que el router designe de forma automática nuestra IP, o estática cuando nosotros desde el sistema operativo la definimos.
+Comandos básicos
+ipconfig: En Windows y Mac nos muestra la dirección IP y puerta de enlace de nuestra pc.
+ifconfig: En Linux nos muestra una descripción de la dirección IP y puerta de enlace de nuestra PC.
+ping www.digitalhouse.com (URL o dirección IP): Este comando envía  paquetes a la dirección especificada. Es utilizado para comprobar conectividad entre dispositivos.

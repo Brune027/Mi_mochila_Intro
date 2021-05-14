@@ -1,0 +1,26 @@
+Clase 3
+Qué es Git?
+Git es una herramienta que se utiliza como un software de control de versiones para mantener de forma eficiente las actualizaciones del código fuente, lo que facilita el trabajo en equipo de una manera clara y ordenada.
+Lleva un registro de los cambios del código fuente, por si se quiere volver a la versión original, y su propósito es coordinar el trabajo que varias personas realizan sobre el mismo mostrando que cambios hizo cada uno de los miembros del equipo.
+
+Repositorio local
+Un respositorio ya sea local o remoto es un almacen de archivos, guardados en pequeños “paquetes” llamados commits, tanto en tu computadora como en la nube (github)
+$ git init
+$ git config user.name “Brune027”
+$ git config user.name (para verificar)
+$ git config user.email brune027@hotmail.com
+$ git config user.email (verificar)
+$ git config –global user.name “Brune027”
+$ git config –global user.email “brune027@hotmail.com”
+
+Como agregar archivos al repositorio
+Los archivos se suben a pequeños commits los cuales detallan una marca de tiempo, firma del autor, y dejan un historial de los cambios realizados en el proyecto para poder hacer un completo seguimiento y control.
+
+Desde la terminal:
+$ git add
+$ git status
+$ git add . (abrevia el proceso y agrega todos los archivos presentes en el repositorio, los nuevos y los viejos modificados)
+Cómo confirmar archivos
+Un commits es una confirmación a través de la cual se le informa al repositorio que los archivos que se fueron agregando han sido modificados, incluyendo una marca indeleble de tiempo y el autor del mismo.
+Se puede agregar mensajes utilizando el comando $git commit -m "mensaje"
+ 

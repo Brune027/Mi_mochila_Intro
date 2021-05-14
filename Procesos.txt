@@ -1,0 +1,51 @@
+Procesos
+Los procesos son la ejecución de un programa o instrucción. Es decir, cuando un programa y su información se cargan en la memoria y se ponen en ejecución podemos hablar de “proceso”.
+Todos los softwares ejecutables se organizan en procesos que necesitan utilizar la CPU, y es tarea del sistema operativo ordenar la ejecución de éstos. Al cambio de un proceso a otro para que utilice la CPU se le denomina Cambio de contexto. Los procesos se ejecutan uno a la vez (aunque pareciera que se ejecutan simultáneamente) y son efímeros, porque se crean y se terminan para evitar que agoten la memoria.
+Los procesos se crean por varias razones:
+1.	De manera interactiva, porque el usuario lo solicita.
+2.	Se crean en segundo plano, por llamados al sistema operativo.
+Estados de los procesos:
+1.	Nuevo: Apenas se crea
+2.	Listo / Preparado: El SO lo carga en la memoria
+3.	Ejecución: Inicia su ejecución. Puede pasar al estado Listo si se interrumpe la ejecución o a Bloqueado. También puede pasar al estado de Salida.
+4.	Bloqueado: Es suspendido cuando espera por un evento o llama al sistema de E/S. Puede volver a Listo cuando finaliza la operación u ocurre el evento.
+5.	Salida: Al finalizar su tarea o debido a una excepción.
+IPC – Comunicación entre procesos
+Señales: Avisos que puede enviar un proceso a otro. El SO se encarga de que el receptor tome una acción para gestionarlas. Es aquí donde el Kernel actúa de intermediario entre los procesos para gestionar el paso de mensajes. No existen los errores como exclusión mutua y son compatibles con cualquier tipo de arquitectura.
+Memoria compartida: Recurso para que diferente software puedan intercambiar información. Se establece un espacio en memoria que se comparte entre ambos procesos. Este método es más económico que usar un multiprocesador.
+Procesos hijos
+Se crean cuando un proceso no puede resolverse inmediatamente, ej. por llamada al sistema. Su función es realizar subtareas para ayudar al proceso padre en la ejecución. Un proceso puede tener muchos hijos, pero un proceso hijo tiene sólo un padre.
+Tipos de procesos
+1.	Procesos independientes: Tiene completa autonomía. No son afectados ni afectan otros procesos.
+2.	Procesos cooperativos: Pueden afectar y ser afectados por otros procesos. Todo aquel que comparta datos o recursos con otros es considerado cooperativo. Los motivos para la cooperación entre procesos son:
+	a.	Algunos procesos carecen de información y deben consultarla
+	b.	CPU es más eficiente y veloz, dando como resultado la modularidad (ejecución independiente y simultánea de varios pasos de una tarea).
+Este tipo de comunicación puede traer problemas cuando un proceso ejecute una tarea de forma errónea o no existe planificación. Ejemplo, cuando un recurso se encuentra bloqueado.
+Sincronización de Procesos
+Teniendo en cuenta el ciclo de vida de los procesos y sus estados (Nuevo, Listo, Ejecución, Bloqueado, Salida), existe una herramienta para la sincronización de procesos: los semáforos.
+Cuando un proceso se está ejecutando y recibe una llamada de Espera pasa a una lista de Bloqueado y permanece allí hasta que un proceso diferente le envía la señal de avance; por lo que pasa a una lista de espera para utilizar el CPU.
+Es importante la correcta planificación del uso del CPU para que la cola de procesos no colapse o tenga una inanición.
+Técnicas de planificación:
+1.	FIFO (First In, First Out): Se asigna tiempo de CPU al primero que lo solicita. Funciona como una cola.
+2.	SJF (Shortest Job First): Se asigna tiempo de CPU al que requiere menor tiempo de ejecución.
+3.	SRTF (Shortest Remaining Time First): Se interrumpen los procesos en ejecución si otro proceso que requiere menos tiempo de CPU para su finalización lo solicita. El proceso interrumpido reanuda la ejecución luego de la finalización del anterior.
+4.	Round Robin: Se asigna una determinada cantidad de tiempo llamada Quantum a cada proceso que va llegando a la cola. Cada proceso se ejecuta por turnos durante un quantum, y si al finalizar ese tiempo todavía requiere más tiempo de CPU vuelve a la cola para esperar otro turno.
+5.	Colas Múltiples: Se pueden agrupar los procesos en diferentes colas con distinta planificación. De esta manera los procesos se asignan a una determinada cola según sus necesidades y tipo.
+6.	Otras técnicas (híbridas):
+	a.	Retroalimentación multinivel
+	b.	Planificación por compartamiento
+Hilos (Threads)
+Los procesadores poseen uno o más núcleos, y a mayor cantidad de éstos, mayores son los procesos que se pueden ejecutar en paralelo.
+Un proceso puede dividirse en secuencias de tareas denominadas hilos, que son porciones de código que puede ejecutarse en forma simultánea en cooperación con otros subprocesos. Múltiples hilos pueden ejecutarse al mismo tiempo compartiendo recursos entre sí, por lo que es importante la sincronización.
+Hasta la época del 2000 los procesadores eran monolíticos: sólo un núcleo e hilo a la vez. Poseen una capacidad de respuesta menor y un comportamiento predecible. No presentan los errores que podrían presentar los multihilos, y los problemas de bloqueo de recursos bajan considerablemente.
+Luego aparecieron los procesadores multinúcleos que ejecutan varios hilos a la vez. Poseen excelente capacidad de respuesta y excelente trabajo en paralelo. Sus procedimientos de sincronización son complejos y pueden presentar problemas porque su comportamiento es más difícil de predecir.
+Planificación de procesos
+Criterios a tener cuenta para elegir o diseñar un algoritmo de planificación:
+1.	Tiempo de respuesta: Es la velocidad con que el ordenador da la respuesta a una petición.
+2.	Tiempo de procesador: Es el tiempo que un proceso está utilizando el procesador sin contar el tiempo que se encuentra bloqueado por operaciones de entrada/salida.
+3.	Tiempo de servicio: Es el tiempo que tarda en ejecutarse un proceso, donde se incluye el tiempo de carga del programa en memoria, el tiempo de espera en la cola de procesos separados, el tiempo de ejecución en el procesador y el tiempo consumido en operaciones de entrada/salida.
+4.	Tiempo de ejecución: Es idéntico al tiempo de servicio menos el tiempo de espera en la cola de procesos separados; es decir, es el tiempo teórico que necesitaría el proceso para ser ejecutado si fuera el único presente en el sistema.
+5.	Tiempo de espera: Es el tiempo que los procesos están activos, pero sin ser ejecutados, es decir, los tiempos de espera en las distintas colas.
+6.	Rendimiento: Es el número de trabajos o procesos realizados por unidad de tiempo, que debe ser lo mayor posible.
+7.	Eficiencia: Se refiere a la utilización del recurso más caro en un sistema, el procesador, que debe estar el mayor tiempo posible ocupado para lograr así un gran rendimiento.
+El planificador del procesador tiene como misión la asignación del mismo a los procesos que están en la cola de procesos preparados.

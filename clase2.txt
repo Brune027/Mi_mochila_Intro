@@ -1,0 +1,9 @@
+Clase 2
+Qué es la terminal?
+La terminal es un programa que esta presente en todos los sistemas operativos, por el medio del cual se le da ordenes al sistema a través de comandos.
+Vemos los comandos más comunes como los de crear una carpeta o un archivo, mover un archivo de lugar, eliminarlos, o copiarlos en otros directorios.
+Aprendimos a editar archivos desde la terminal.
+Los comandos cambian según el sistema operativo que se utiliza, pero algunos de los mas comunes son: 
+- mkdir: Crea una carpeta.
+ - rmdir: Borra una carpeta.
+ - ls: Lista los archivos y directorios presentes en una ubicación.

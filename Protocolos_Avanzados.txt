@@ -1,0 +1,57 @@
+¿Cuál es la función de un router en la red?
+El router realiza las siguientes acciones:
+1.	Recibe el paquete de datos.
+2.	Busca cuál es la dirección de destino.
+3.	Verifica la tabla de enrutamiento que tiene configurada.
+4.	Procede a enviar el paquete a destino por la mejor ruta posible.
+Un router, para recibir o enviar información, utiliza tablas de enrutamiento, que son un conjunto de reglas que sirven para determinar qué camino deben seguir los paquetes de datos. Estas tablas contienen toda la información necesaria para hacer que uno o varios paquetes de datos puedan viajar a través de la red utilizando el mejor camino.
+Algunos componentes importantes de una tabla de enrutamiento:
+Red de destino: Corresponde a la red de destino donde deberá ir el paquete de datos.
+Siguiente salto: Es la dirección de IP de la interfaz de red por donde viajará el paquete de datos para seguir con su camino hasta el final.
+Interfaz de salida: Es la interfaz de red por donde deben salir los paquetes para llegar posteriormente a destino.
+Enrutamiento estático
+Las tablas se crean de forma manual. El administrador de red las configura con la información de cómo alcanzar las diferentes redes remotas. Este es responsable de que las redes sean accesibles y estén libres de bugs e inconsistencias.
+1.	Consume menos ancho de banda.
+2.	Consume menos memoria.
+3.	Se utiliza para redes pequeñas.
+4.	No es escalable.
+Ventajas: Aunque el mantenimiento es complicado, no se consume ancho de banda de red para enviar mensajes entre routers.
+Desventajas: Cualquier cambio en la red requiere que el administrador agregue o elimine las rutas afectadas por dichos cambios.
+Enrutamiento dinámico
+La información necesaria para crear y mantener actualizadas las tablas se obtienen de los demás routers de la red. Estos utilizan protocolos de enrutamiento para intercambiar información con sus routers vecinos.
+1.	Alto consumo de ancho de banda.
+2.	Alto consumo de memoria.
+3.	Se utiliza para redes grandes.
+4.	Es automático.
+Ventajas: El administrador solo pone en marcha el enrutamiento dinámico, luego las tablas de enrutamiento se ajustan automáticamente ante cambios en la red.
+
+Desventajas: Consume mucho ancho de banda, debido a los mensajes que se intercambian los routers para configurarse automáticamente.
+Puertos
+Son puntos de conexión para el intercambio de información y la transmisión de datos.
+Cuando enviamos datos desde nuestra red local a la externa el router utiliza una serie de canales o puertas en las que se organiza el contenido que enviamos. Estos son los puertos. Funcionan como puertas que se abren y cierran y permiten el paso de la información que enviamos o recibimos en la red.
+Todos los routers tienen un total de 65536 puertos que van desde el 0 al 65535.
+La IANA, entidad que supervisa la asignación global de direcciones IP y otros recursos relativos a los protocolos de internet tiene establecido un estándar de asignación de puertos.
+Existen 3 grupos de puertos que tienen una función específica:
+Puertos del 0 al 1023: Son los que están reservados para el sistema operativo de la computadora y los protocolos más importantes para su funcionamiento.
+Puertos del 1024 al 49151: Son los puertos registrados, los que se utilizan por las aplicaciones y los juegos que instales en la computadora.
+Puertos del 49152 al 65535: Puertos dinámicos o privados, corresponden a las aplicaciones que necesitan conectarse a un servidor.
+VPN
+Una red privada virtual, o por sus siglas en inglés también llamada VPN, es una tecnología que protege nuestra privacidad cuando utilizamos Internet dirigiendo nuestra conexión a través de un servidor que oculta la dirección IP y encripta la comunicación online.
+Cuando se utiliza una VPN, la información enviada desde la computadora pasa a través de uno de los servidores del proveedor de VPN antes de llegar a su destino.
+Ventajas:
+1.	Fáciles de instalar y utilizar
+2.	Velocidad: No se ve afectada por el software de cifrado y los servidores
+3.	Compatibilidad con la mayoría de dispositivos
+Desventajas:
+1.	Encriptación débil
+2.	Fallos del software pueden ocasionar que los mensajes viajen sin cifrar y fuera de la red VPN
+3.	Políticas de registro variadas
+TOR
+A primera vista, la red Tor es similar a una VPN. Los mensajes hacia y desde su computadora pasan a través de la red Tor en lugar de conectarse directamente a los recursos de Internet. Pero donde las VPN brindan privacidad, Tor brinda anonimato.
+Ventajas:
+1.	Difíciles de apagar: La red está distribuido por lo que no hay un lugar central para hacerlo
+2.	Anonimato casi completo
+Desventajas:
+1.	Lentitud: Los mensajes pasan por tres o más servidores y se cifran y descifran al menos 3 veces
+2.	Dirigida por voluntarios: Por lo tanto, no hay ingresos para actualizaciones y mantenimiento
+3.	Baja compatibilidad con dispositivos

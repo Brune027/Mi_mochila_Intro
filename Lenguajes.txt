@@ -1,0 +1,30 @@
+Los algoritmos son una seria de pasos que constituyen las instrucciones que se especifican a través de los lenguajes formales llamados de programación.
+Los dos grandes grupos son los específicos (resuelven problemas puntuales) y los generales (permiten desarrollar infinidad de programas). 
+También existen los lenguajes de:
+1.	Alto nivel: Más cercanos al lenguaje natural, nos permite enforcarnos en funcionalidades interesantes. Permiten la abstracción de los aspectos internos del lenguaje y un desarrollo más rápido. Ej: javascript.
+2.	Bajo nivel: Son más específicos y permiten mayor eficiencia en el uso de recursos. Se debe estar atento al hardware y a la funcionalidad. Ej: assembler.
+Los lenguajes de tipados fuerte y débil se distinguen en si permiten o no violaciones de los tipos de datos una vez declarados.
+Tipado débil: No indicamos usualmente el tipo de variable. Su principal ventaja es que es más rápido desarrollar pero podemos cometer más errores si no tenemos cuidado.
+Tipado fuerte: Se nos obliga a indicar el tipo de dato al declarar la variable, y no puede ser cambiado posteriormente. La ventaja es que el código es más expresivo y se cometen menos errores, pero como desventajas es que son más estrictos y hay que escribir más código.
+Tipado estático: La comprobación de tipos se realiza durante la compilación y no durante la ejecución. Permite que los errores se detecten antes y que la ejecución sea más eficiente y segura.
+Tipado dinámico: La comprobación de tipos se realiza durante la ejecución. Es más flexible a pesar de ejecutarse más lentamente y es más propenso a contener errores de programación.
+Frameworks (Marcos de trabajo)
+Es una estructura previa o esqueleto que se puede aprovechar para desarrollar un proyecto. Es una especie de plantilla que simplifica la elaboración de las tareas.
+Paradigmas de Programación
+Son una forma de pensar bajo un modelo establecido.
+1.	Programación Imperativa: Indica a la computadora qué debe hacer y en qué secuencia, a través de instrucciones sucesivas.
+	a.	Programación Estructurada: Utiliza estructuras de secuencia, condicional y de iteración.
+	b.	Programación Orientada a Objetos: Utiliza objetos y la interacción entre estos para resolver problemas.
+2.	Programación Declarativa: Describe el resultado final que se busca.
+	a.	Programación Lógica: Se basa en los conceptos de lógica matemática.
+	b.	Programación Funcional: Se basa en el concepto matemático y el principio de función.
+3.	Programación Multiparadigma: Lenguajes de programación que pueden utilizar más de un paradigma
+4.	Programación con lenguaje específico del dominio: Engloba a los lenguajes desarrollados para resolver un problema específico.
+Código fuente
+Es una colección de instrucciones de computadora escritas utilizando un lenguaje de programación legible por humanos.
+Código de máquina
+Es una secuencia de sentencias en lenguaje de máquina o binario. Es el resultado obtenido después de que el compilador convierta el código fuente en un lenguaje que pueda ser comprendido por el procesador. 
+Compilador
+Es una aplicación que traduce (compila) el código fuente en un código que el procesador puede comprender y ejecutar. Este código de máquina se almacena en forma de archivo ejecutable. Los ejecutables pueden funcionar correctamente en otras computadoras con similar arquitectura para la cual se compiló.
+Intérprete
+Traduce el código fuente línea a línea y lo ejecuta directamente. El proceso de traducción funciona más rápido que en un compilador, pero la ejecución es más lenta y se necesita gran cantidad de memoria. La ventaja es que se puede usar el mismo código en distintas arquitecturas.

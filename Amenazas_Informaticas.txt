@@ -1,0 +1,78 @@
+Seguridad Informática
+La seguridad informática, o ciberseguridad, es una disciplina que se encarga de proteger la integridad y la privacidad de los datos y toda la información que se encuentre alojada en un sistema informático. La idea principal es que se pueda evaluar la seguridad de los sistemas de cómputo y redes para, posteriormente, protegerlos de los ataques informáticos que se pueden llevar a cabo a los sistemas.
+Pero, ¿esto fue siempre así? A lo largo de la historia, esta seguridad se ha ido transformando, gracias a los controles y auditorías sobre los sistemas, explotando las vulnerabilidades que se puedan encontrar en los mismos. Se han implementado medidas de seguridad física y lógicas en conjunto con la seguridad en Internet.
+La seguridad informática se enfoca en la protección de la infraestructura computacional y todo lo vinculado con la misma, especialmente, en la información que se transmite a través de las redes de computadoras. Para minimizar todos los riesgos a la infraestructura y a la información se han creado a lo largo de la historia múltiples métodos, como estándares, protocolos, reglas, herramientas y obviamente leyes informáticas.
+Debemos tener en cuenta que la seguridad informática únicamente se va a centrar en el medio de comunicación por el cual va a viajar la información. No debemos confundir este término con el de seguridad de la información, ya que esta última puede estar en diferentes medios y no solo en los medios informáticos.
+Bajo este último concepto, la seguridad informática va a identificar, eliminar vulnerabilidades y proteger de ataques maliciosos a los equipos de cómputo, servidores, redes informáticas y todo aquel medio informático por el cual se transmita información.
+Virus
+Es la amenaza tecnológica más común y la más antigua. Este es un componente de software objetivo es permanecer en un sistema copiándose así mismo en varios lugares desde el momento en que se ejecuta en el sistema. Así cuando intentamos eliminar un archivo o programa infectado, el virus seguirá ahí en memoria ya que ha infectado otras partes del sistema. 
+La mayoría de estos virus se adhieren a los archivos ejecutables o también al registro maestro de arranque. Estos no tienen la capacidad por sí mismos de infectar a otros dispositivos al menos que lo pasemos por medio de un hardware como un USB, por eso decimos que son de poca infección, porque se replican a sí mismos dentro del mismo dispositivo.
+Este es de los primeros malware que afectaban a las computadoras más antiguas antes de que estuvieran conectadas a la red.
+Gusano
+Todo cambian cuando las computadoras con el tiempo se empiezan a conectar a la red y propicia la aparición del malware llamado gusano. Este malware no solo se copia asimismo el sistema, sino que además utiliza la red para copiarse a otras máquinas a través de las vulnerabilidades de la red o agujero de seguridad. Por esto tiene una mayor capacidad infección, esto, a su vez, se debe a la evolución misma de la tecnología.
+El objetivo de estos gusanos es replicarse a sí mismos hasta saturar el funcionamiento del sistema.
+Troyanos
+Los famosos troyanos no causan daños en sí mismo, sino que están basados en el mítico Caballo de Troya, o sea, una estructura utilizada para cargar cosas ocultas en este caso, virus, gusanos y demás malwares.
+Los troyanos generalmente son esos programas sin licencia que instalamos pensando que no era ningún daño porque no somos conscientes de ello pueden ser un troyano, requieren de la ejecución del usuario ya que no pueden duplicarse a sí mismo. El troyano también puede generar backdoors, que es una puerta trasera para que un dispositivo pueda ser controlado de forma remota por alguien más. Pueden usarlo como un servidor Proxy para ocultar ataques o lo más común para introducir spam a nuestro equipo.
+Adwares
+Son muy similares a los troyanos, cuyo objetivo es bombardear nuestro dispositivo con publicidad. No son dañinos y usualmente vienen dentro de troyanos.
+
+En la red, nuestros equipos están constantemente expuestos a amenazas informáticas y si bien todos los malware son bastante peligrosos porque siempre buscan robar nuestros datos. Existen algunos malware especialmente peligrosos que cuentan con un modo de ataque más sutil para robar que los diferencia de otros malwares como los virus, gusanos, y adwords.
+En principio están los spywares o softwares espías, este malware no daña los dispositivos, pero sí roba toda la información del sistema. Su objetivo es permanecer oculto para robar todo tipo de datos desde contraseñas, información bancaria, redes sociales, entre otros. También puede acceder por la cámara o micrófono del dispositivo sin que el usuario lo note. Los spyware suelen ingresar en troyanos o también pueden ser instalados como es el caso del keyloger, un spyware que registra las pulsaciones del teclado para tener la información de que es lo que el usuario escribe.
+Existen malwares más complejos como los rootkits, que en realidad son un conjunto de software. Los demás malware atacan al sistema operativo entonces, una vez que se reinstala el sistema, desaparecen malware. Los rootkits van dirigidos al firmware del sistema o los programas de usuario y tienen acceso al dispositivo en modo Sistema o kernel, este acceso le permite a los rootkits realizar modificaciones a los procesos internos del sistema operativo, a los archivos sistema como los registros e incluso a las cuentas de usuario. Además, los rootkits logran esconderse de los softwares antimalware y antivirus.
+Otro tipo de malwares es el Botnets que es la mezcla entre bot y net, esto quiere decir que es una red de robots, un ejército de zombies que es puesto por un atacante en una red de computadoras para ser controladas todas al mismo tiempo. Principalmente se usa con el objetivo de cometer crímenes digitales o crimeware como robo de identidad o información bancaria, chantaje, entre otros. Los troyanos también suelen ser los principales causantes de la propagación de botnes. 
+Todos los malos anteriores se caracterizan por permanecer ocultos al usuario, sin embargo, los ransomware no lo hacen. Los ransomware o software de secuestro, suele ser usado por atacantes contra empresas para secuestrarla información de sus servicios y productos y luego pedir dinero a cambio del rescate. El ciberatacante hace evidente el chantaje por el secuestro y generalmente suele pedir una contraseña para poder acceder de nuevo al sistema. Este tipo de malware se pueden encontrar en archivos adjuntos de correos electrónicos no deseados o al hacer clic en vínculos que aseguran venir de bancos o instituciones legales, también se encuentran en redes para compartir archivos como las p2p.
+Es importante tener cuidado con las descargas que realizamos en nuestros dispositivos, el uso aplicaciones no autorizadas y evitar las páginas peligrosas y usar un software antimalware.
+
+Protección de la información
+La información es recurso clave para tomar decisiones, dimensionar cosas, y disminuir riesgos. La misma cuenta con tres dimensiones conocidas como: integridad, disponibilidad y confidencialidad, también llamadas CIA por sus siglas en inglés. Los atacantes de un sistema van a tratar de vulnerar algunas de esas dimensiones. 
+Integridad
+Consiste en que la información se encuentre completa, entera y que los datos que están dentro del sistema sean los que deberían ser. Un ejemplo de esta dimensión sería el ataque a una base de datos y la modificación de los datos que hay en la misma, con lo cual podemos seguir viendo la información, pero la misma es errónea debido a que la original fue alterada.
+Disponibilidad
+Significa que la información una persona/usuario debe poder tener acceso a la información en el momento que lo necesita, es decir, en tiempo y forma. Un típico ataque a este tipo de dimensión es el ataque de denegación de servicio.
+Confidencialidad
+Refiere a que la información tiene que estar disponible únicamente para las personas que tienen acceso a esta información y bloqueada para el acceso a terceros. Por ejemplo, los datos personales e historiales médicos.
+ 
+
+Protección de la información
+La protección de la información se basa en garantizar el completo y total funcionamiento de las 3 dimensiones, para ello, debemos implementar medidas preventivas y reactivas. 
+Medidas preventivas se refiere a todas las acciones que pueden tomarse para evitar problemas no deseados. Por otro lado, las medidas reactivas son aquellas donde ya se ocasionó un problema de seguridad y hay que solventarlo.
+Protección de la confidencialidad
+La confidencialidad puede romperse de varias maneras, tanto directas (hackeando la seguridad) como indirectas a través de errores humanos. 
+Algunas técnicas para asegurar la confiabilidad pueden ser:
+Encriptación: Significa cambiar el formato de los datos con la razón de que si estos son interceptados solo las personas autorizadas sepan cómo leerlos (medida preventiva).
+Controles de acceso: Asegurar que solo las personas autorizadas puedan acceder a la información (medida preventiva).
+Borrado remoto: Se refiere al esfuerzo de mantener los datos siempre privados, en el caso de que se perdiera el acceso, la capacidad de bloquear el dispositivo o borrar la información (medida reactiva).
+Capacitación al personal: Existe un concepto llamado ingeniería social, el cual es la denominación que se le da a cómo los usuarios son engañados para otorgar sus accesos, la capacitación en estos problemas es una acción preventiva para evitarlos.
+Protección de la integridad
+La integridad puede romperse de varias maneras similares a la de la confiabilidad, por lo cual, varias de sus acciones de seguridad son reutilizadas. 
+Algunas técnicas para asegurar la integridad pueden ser:
+Auditorias: Se utilizan para comprobar que la información coincide con lo que debería ser correcto (medida reactiva).
+El control de versiones: Si ha ocurrido un inconveniente con la información, diversas herramientas de control de versiones ayudan a “volver a un estado anterior” (medida reactiva).
+Firmas digitales: Esta medida permite asegurar la autenticidad del documento (medida preventiva).
+Detección de intrusos: Diseñados para detectar problemas cuando un acceso no autorizado se ha cometido (medida reactiva).
+Protección de la disponibilidad
+La disponibilidad debe tenerse en cuenta para cuando ocurra un problema de seguridad como de forma preventiva al mismo. 
+Algunas técnicas para asegurar la disponibilidad pueden ser:
+Tolerancia a fallos: La capacidad de los sistemas o servidores a que si algún tipo de fallo sucede, la información pueda ser utilizada (preventiva o reactiva dependiendo la situación).
+Redundancia: De esta forma la información y las validaciones de acceso se repitan tanto que la información está segura de no perderse en su totalidad (preventiva).
+Parches de seguridad: Cuando se detecta una falla, debe solucionarse el problema para que no vuelva a ocurrir, igualmente si la falla fue por un software, actualizarlo con la vulnerabilidad resuelta.
+Fallas y vulnerabilidad
+Una falla, también conocida como bug, es un error en un programa o sistema operativo que desencadena un resultado indeseado.
+El término bug viene desde 1947 cuando Grace Hopper, mientras estaba programando el Mark II, descubrió que un insecto (bug) había provocado un error en uno de sus relés electromagnéticos.
+En el desarrollo del software existen muchos tipos de fallas, pero en general se pudieron establecer unos tipos generales de bugs según su comportamiento.
+Tipos de fallas
+Heisenbug: Basados en el principio de incertidumbre de Heisenberg se denominan a aquellos bugs que alteran o desaparecen su comportamiento al tratar de depurarlos.
+Bohrbug: Nombrados así por el modelo atómico de Bohr, es una clasificación de un error de software inusual que siempre produce una falla al reiniciar la operación que causó la falla.
+Mandelbug: Llamado así por el matemático Benoit Mandelbrot, un mandelbug es un fallo con causas tan complejas que su comportamiento es totalmente caótico.
+Schroedinbugs: Son errores que no aparecen hasta que alguien lee el código y descubre que, en determinadas circunstancias, el programa podría fallar. A partir de ese momento, el “Schroedinbug” comienza aparecer una y otra vez.
+Vulnerabilidad
+Una vulnerabilidad es una debilidad o fallo de un sistema informático que puede poner en riesgo la integridad, confidencialidad o disponibilidad de la información.
+La evaluación o detección de vulnerabilidades permite reconocer, clasificar y caracterizar los agujeros de seguridad.
+Pasos para detectar una vulnerabilidad
+Si bien no existe un método único para detectar vulnerabilidades, es posible armar una serie de ítems a tener en cuenta para considerar nuestra información segura.
+•	Evaluar cómo está constituida la red e infraestructura de la empresa.
+•	Delimitar quién puede y debe acceder a la información confidencial.
+•	Probar que las copias de seguridad realizadas funcionen.
+•	Identificar las partes más sensibles y esenciales del sistema.
+•	Realizar auditorías del estado de la seguridad informática.

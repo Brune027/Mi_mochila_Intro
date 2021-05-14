@@ -1,0 +1,157 @@
+Sistemas operativos
+
+Definición
+Los sistemas operativos son un conjunto de softwares que funcionan como intermediario entre el hardware y el usuario. Es decir, un controlador del hardware que ofrece un ambiente amigable para las acciones que necesite hacer el último. 
+Los podemos encontrar en gran parte de los dispositivos que utilizan un microprocesador para funcionar (por ejemplo: computadoras, celulares, electrodomésticos inteligentes, etc)
+El SO también se encarga de administrar los dispositivos de entrada y salida así como también la cola de procesos que se deben ejecutar.
+Recursos Gestionados por el SO
+•	Gestiona la memoria RAM y ejecuta las aplicaciones designando los recursos necesarios.
+•	Administra la CPU gracias al algoritmo de programación.
+•	Direcciona las entradas y salidas de datos (a través de drivers) por medio de periféricos de entrada y salida.
+•	Administra la información para el correcto funcionamiento de la PC.
+•	Dirige las autorizaciones de uso para el usuario.
+•	Administra los archivos.
+
+Tipos de SO
+
+ 
+Según el USUARIO
+
+Monousuario
+Sistema que permite ejecutar los programas de un usuario a la vez.
+-	Windows (hasta Me)
+-	DOS
+
+Multiusuario
+Sistema que permite que varios usuarios ejecuten simultáneamente sus programas.
+-	Windows (a partir de XP)
+-	Unix
+-	Linux 
+-	Mac OSX
+
+Según la gestión de TAREAS
+
+Multitarea
+Puede ejecutar varios procesos al mismo tiempo.
+-	Windows
+-	Unix
+-	Linux
+-	Mac OSX
+Monotarea
+Solo puede ejecutar un proceso a la vez
+-	DOS
+ 
+Según la gestión de RECURSOS
+
+Centralizado
+Solo permite utilizar los recursos de un ordenador.
+-	Windows
+-	Linux
+-	Mac OSX
+-	Unix
+
+Distribuido
+Permite ejecutar los procesos de más de un ordenador al mismo tiempo.
+-	Novell Netware
+-	Windows Server
+-	Cisco IOS
+-	Unix
+-	Linux
+
+Según su ESTRUCTURA INTERNA
+
+Monolítica
+
+-	Novell Netware
+-	Windows Server
+-	Cisco IOS
+-	Unix
+-	Linux
+
+Jerárquica
+-	Unix
+-	Multics
+
+ 
+Máquina virtual
+
+-	Microsoft Hyper-V
+-	VMware
+-	VirtualBox
+-	QEMU
+-	Kernel-Based Virtual machine
+
+
+Según LICENCIA
+
+Open Source
+Permiten modificar, adaptar y usar un sistema operativo. Ej: Ubuntu y Red Hat
+Propietary Software
+No permiten modificaciones. Ej: Windows
+ 
+Servidores
+
+En ellos encontramos SO mayormente heredados del sistema operativo UNIX como Red Hat.
+  ¬
+ 
+Básicamente los SO para servidores se diferencian en su uso ya que son “multiusuarios” y, como su nombre lo indica, varios usuarios están conectados al mismo tiempo trabajando en el mismo núcleo.
+
+Generaciones de Sistemas Operativos
+
+ 
+ 
+-	Generación 0 (década 1940)
+
+Las computadoras electrónicas digitales no tenían sistema operativo. Los programas, por lo regular, manejaban un bit a la vez, en columnas de switchs mecánicos. Los programas de lenguaje máquina manejaban tarjetas perforadas.
+-	Primera generación (1945-1965)
+
+Tubos de vacío y tableros enchufables
+Se lograron construir máquinas calculadoras usando tubos de vacío. Estas máquinas eran enormes y ocupaban cuartos enteros con decenas de miles de tubos de vacío, pero eran mucho más lentas que incluso las computadoras personales más baratas de la actualidad. Toda la programación se realizaba en lenguaje de máquina absoluto.
+-	Segunda generación (1955-1965)
+
+Transistores y sistemas de lote
+Estas máquinas se encerraban en cuartos de computadora con acondicionamiento de aire especial. Para ejecutar un programa, un programador escribía primero el programa en papel (en FORTRAN o ensamblador) y luego lo perforaba en tarjetas. Después, llevaba el grupo de tarjetas al cuarto de entrada y lo entregaba a uno de los operadores. Cuando la computadora terminaba el trabajo que estaba ejecutando en ese momento, se separaba la salida impresa y se llevaba al cuarto de salida donde el programador podía buscarla. Luego, el operador tomaba uno de los grupos de tarjeta traídos del cuarto de entrada y lo introducía en el lector. Si se requería el compilador de FORTRAN, el operador tenía que traerlo de un archivero e introducirlo en el lector. 
+
+Dado el alto costo del equipo, la solución que se adoptó generalmente fue el sistema por lotes. El principio de este modo de operación consistía en juntar una serie de trabajos en el cuarto de entrada, leerlos y grabarlos en una cinta magnética usando una computadora pequeña y (relativamente) económica.
+
+Después de cerca de una hora de reunir un lote de trabajos, la cinta se rebobinaba y se llevaba al cuarto de la máquina, donde se montaba en una unidad de cinta. El operador cargaba entonces un programa especial, que leía el primer trabajo de la cinta y lo ejecutaba. La salida se escribía en una segunda cinta, en lugar de imprimirse. Cada vez que terminaba un trabajo, el sistema operativo leía automáticamente el siguiente trabajo de la cinta y comenzaba a ejecutarlo.
+-	Tercera generación (1965-1970)
+
+Circuitos integrados ( CI ) y multiprogramación
+Las máquinas diferían solo en el precio y el rendimiento (memoria máxima, velocidad del procesador, número de dispositivos de E/S permitidos, entre otros). IBM trató de resolver simultáneamente ambos problemas introduciendo la System/360, puesto que todas las máquinas tenían la misma arquitectura y conjunto de instrucciones, los programas escritos para una máquina podían ejecutarse en todas las demás, al menos en teoría. 
+Los 360 y los sistemas operativos de tercera generación parecidos a él producidos por otros fabricantes de computadoras lograron satisfacer a sus clientes en un grado razonable y también popularizaron varias técnicas clave que no existían en los sistemas operativos de la segunda generación. Tal vez la más importante de ellas haya sido la multiprogramación.
+El problema era el tiempo de espera, la solución a la que se llegó fue dividir la memoria en varias secciones, con un trabajo distinto en cada partición. Mientras un trabajo estaba esperando que terminara su E/S, otro podía estar usando la CPU. Si se podían tener en la memoria principal suficientes trabajos a la vez, la CPU podía mantenerse ocupada casi todo el tiempo. También, tenían la capacidad de leer trabajos de las tarjetas al disco tan pronto como se llevaban al cuarto de computadoras. Luego, cada vez que un trabajo terminaba su ejecución, el sistema operativo podía cargar uno nuevo del disco en la partición que había quedado vacía y ejecutarlo.
+-	Cuarta generación (1980-nuestros días)
+
+Computadoras personales
+Con la invención de los circuitos integrados a gran escala (LSI), chips que contienen miles de transistores en un cm2 de silicio, nació la era de la computadora personal.
+Dos sistemas operativos dominaron inicialmente el campo de las computadoras personales y las estaciones de trabajo: MS-DOS de Microsoft y UNIX. MS-DOS se usaba ampliamente en la IBM PC y otras máquinas basadas en la CPU Intel 8088 y sus sucesoras. Más tarde, la Pentium y Pentium Pro. Aunque la versión inicial de MS-DOS era relativamente primitiva, versiones subsecuentes han incluido características más avanzadas, muchas de ellas tomadas de UNIX. El sucesor de Microsoft para MS-DOS, Windows, originalmente se ejecutaba encima de MS-DOS, pero a partir de 1995 se produjo una versión autosuficiente de WINDOWS.
+El otro competidor importante es UNIX, que domina en las estaciones de trabajo y otras computadoras del extremo alto, como los servidores de red. UNIX es popular sobre todo en máquinas basadas en chips RISC de alto rendimiento.
+ 
+Kernel
+
+Definción
+
+Es la capa fundamental del sistema operativo encargado de comunicar y administrar los recursos de la computadora, como la RAM o el uso del procesador.
+
+Tipos de Kernel
+
+Existen distintos tipos de kernel, pero dos ramas entre las cuales se divide su enfoque:
+-	Monolítico
+-	Microkernel
+ 
+Además existen variantes de estas ramas los cuales buscan explotar aún más sus fortalezas y mejorar sus debilidades.
+ 
+ 
+Llamadas al sistema
+
+Son la manera mediante la cual un programa solicita una acción al sistema con el que interactúa.
+Es, a su vez, el punto de enlace entre el usuario y el modo privilegiado del sistema operativo. Esto permite que las aplicaciones hagan uso de los recursos del hardware.
+
+Objetivo
+El objetivo principal es diferenciar las acciones que puede o no realizar un usuario ya que alguna de estas podrían resultar muy dañinas para el sistema operativo que sólo debe controlarlo el modo privilegiado
+ 
+
+Clasificación de llamados al sistema
+
+ 
